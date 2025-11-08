@@ -10,8 +10,8 @@ dist/
 build/
 *.log
 .DS_Store
+
+# Generated output directories
 data/
 reports/
-*.html
-*.png
-*.csv
+output/
