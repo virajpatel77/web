@@ -1,8 +1,24 @@
-yfinance>=0.2.28
-pandas>=2.0.0
-numpy>=1.24.0
+# Core data and scientific libraries
+pandas>=2.0.0,<2.2.0
+numpy>=1.24.0,<2.0.0
+scipy>=1.10.0,<1.14.0
+
+# Visualization
 matplotlib>=3.7.0
 seaborn>=0.12.0
-scipy>=1.10.0
 plotly>=5.14.0
-pandas-ta>=0.3.14b
+
+# Data fetching
+yfinance>=0.2.40
+beautifulsoup4>=4.11.1
+lxml>=4.9.1
+html5lib>=1.1
+frozendict>=2.3.4
+peewee>=3.16.2
+platformdirs>=2.0.0
+protobuf>=3.19.0
+websockets>=13.0
+curl_cffi>=0.7
+
+# Note: multitasking is installed via stub to avoid build issues
+# See installation instructions in README.md

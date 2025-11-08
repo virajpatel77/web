@@ -33,13 +33,29 @@ This creates a credit spread with defined risk and profit potential, ideal for r
 
 1. Clone or download this repository:
 ```bash
-cd /home/user/web
+cd /path/to/web
 ```
 
 2. Install required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+3. Install the multitasking stub (workaround for build issues):
+```bash
+cat > /tmp/multitasking.py << 'EOF'
+"""Stub multitasking module"""
+def task(func): return func
+def wait_for_tasks(): pass
+def createPool(name="default", processes=None): pass
+__version__ = "0.0.11"
+EOF
+
+# Copy to your Python site-packages (adjust path as needed)
+cp /tmp/multitasking.py $(python -c "import site; print(site.getsitepackages()[0])")/multitasking.py
+```
+
+**Note**: The bot will automatically use demo data if Yahoo Finance is unavailable
 
 ### Running the Bot
 
