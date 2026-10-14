@@ -137,7 +137,7 @@ class VolatilityPredictor:
             'volatility_change': float(vol_change),
             'volatility_change_percent': float(vol_change_percent),
             'volatility_regime': regime,
-            'regime_confidence': regime_confidence,
+            'regime_confidence': float(regime_confidence),
             'forecast_horizon': self.forecast_horizon,
             'daily_forecasts': [float(v) for v in volatility_forecast]
         }
@@ -188,7 +188,7 @@ class VolatilityPredictor:
             'volatility_change': float(vol_change),
             'volatility_change_percent': float(vol_change_percent),
             'volatility_regime': regime,
-            'regime_confidence': regime_confidence,
+            'regime_confidence': float(regime_confidence),
             'forecast_horizon': self.forecast_horizon,
             'method': 'simple'
         }

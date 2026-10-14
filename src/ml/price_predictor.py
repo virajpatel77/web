@@ -172,12 +172,12 @@ class PricePredictor:
             confidence = 0.5
 
         return {
-            'current_price': current_price,
-            'predicted_price': predicted_price,
-            'price_change': price_change,
-            'price_change_percent': price_change_percent,
+            'current_price': float(current_price),
+            'predicted_price': float(predicted_price),
+            'price_change': float(price_change),
+            'price_change_percent': float(price_change_percent),
             'direction': direction,
-            'confidence': confidence,
+            'confidence': float(confidence),
             'forecast_days': self.forecast_days
         }
 
@@ -214,12 +214,12 @@ class PricePredictor:
             confidence = 0.5
 
         return {
-            'current_price': current_price,
-            'predicted_price': predicted_price,
-            'price_change': predicted_change,
-            'price_change_percent': price_change_percent,
+            'current_price': float(current_price),
+            'predicted_price': float(predicted_price),
+            'price_change': float(predicted_change),
+            'price_change_percent': float(price_change_percent),
             'direction': direction,
-            'confidence': confidence,
+            'confidence': float(confidence),
             'forecast_days': self.forecast_days,
             'method': 'moving_average'
         }
