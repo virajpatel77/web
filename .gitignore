@@ -11,6 +11,13 @@ build/
 *.log
 .DS_Store
 
+# Database files
+*.db
+*.db-journal
+
+# ML model files
+models/
+
 # Generated output directories
 data/
 reports/
